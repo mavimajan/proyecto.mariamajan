@@ -12,7 +12,7 @@ body{
 /* header footer */
 
 header, footer{
-    background-color: rgb(159, 252, 255);
+    background-image: linear-gradient(to bottom, rgb(24, 241, 248), rgb(159, 252, 255));
     display: grid;
     grid-template-columns: 15% 85%;
     column-gap: 10px;
