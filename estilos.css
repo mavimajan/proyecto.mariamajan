@@ -5,8 +5,16 @@
     box-sizing: border-box;
 }
 body{
-    background-color: oldlace;
     font-family:'Código M PLUS 1', sans-serif;
+    animation: fondo 5s 1;
+}
+@keyframes fondo{
+    0%{
+        background-color: rgb(159, 252, 255);
+    }
+    100%{
+        background-color: oldlace;
+    }
 }
 
 /* header footer */
@@ -105,6 +113,9 @@ header, footer{
 .imgDestacados img{
     width: 150px;
     height: 200px;
+}
+.imgDestacados img:hover{
+    transform: scale(1.2);
 }
 
 /* PREGUNTAS FRECUENTES */
