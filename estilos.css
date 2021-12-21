@@ -63,15 +63,21 @@ header, footer{
 }
 
 /* MAIN */
-
-.video{
+.carouselImg{
     display: flex;
     justify-content: center;
-}
-.video video{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+#demo{
+    width: 750px;
+    height: 400px;
+}
+.carousel-item img{
+    width: 750px;
+    height: 400px;
+}
+
 .sectionProductos h1{
     background-color:rgb(159, 252, 255);
     color: grey;
@@ -496,9 +502,17 @@ header, footer{
         grid-template-columns: 30% 70%;
         column-gap: 0px;
     }
-        .video video{
-        width: 100%;
+    .carouselImg #demo{
+        width: 90%;
+        height: 250px;
     }
+    .carousel-item img{
+        width: 90%;
+        height: 250px;
+    }
+        /* .video video{
+        width: 100%;
+    } */
     .imgDestacados{
         display:grid;
         grid-template-columns: 50% 50%;
