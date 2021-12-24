@@ -19,7 +19,7 @@ body{
 
 /* header footer */
 
-header, footer{
+footer{
     background-image: linear-gradient(to bottom, rgb(24, 241, 248), rgb(159, 252, 255));
     display: grid;
     grid-template-columns: 15% 85%;
@@ -34,28 +34,28 @@ header, footer{
     margin-top: 12px;
     margin-left: 12px;
 } 
-.header, .footer{
+.footer{
     display:grid;
     flex-direction: row;
     align-items: center;
 }
-.header ul{
+/* .header ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+} */
 .footer ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.header.footer, ul li:hover{
+.footer ul li:hover{
     display: inline-block;
     background-color: white;
 }
-.header.footer, ul li a{
+.footer, ul li a{
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
