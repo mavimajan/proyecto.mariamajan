@@ -453,7 +453,7 @@ main{
 /* INDEX */
 /* header-footer */
 @media only screen and (max-width: 768px){
-    header, footer {
+footer {
         display: grid;
         grid-template-columns: 15% 85%;
         column-gap: 1px;
@@ -508,7 +508,7 @@ main{
 
 }
 @media only screen and (max-width: 480px){
-    header, footer{
+    footer{
         grid-template-columns: 30% 70%;
         column-gap: 0px;
     }
