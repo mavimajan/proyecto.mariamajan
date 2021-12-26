@@ -7,14 +7,6 @@
 body{
     font-family:'Código M PLUS 1', sans-serif;
 }
-/* @keyframes fondo{
-    0%{
-        background-color: rgb(159, 252, 255);
-    }
-    100%{
-        background-color: oldlace;
-    }
-} */
 
 /* header footer */
 header{
@@ -44,12 +36,6 @@ footer{
     flex-direction: row;
     align-items: center;
 }
-/* .header ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
 .footer ul{
     list-style: none;
     display: flex;
@@ -526,9 +512,6 @@ footer {
         width: 90%;
         height: 250px;
     }
-        /* .video video{
-        width: 100%;
-    } */
     .imgDestacados{
         display:grid;
         grid-template-columns: 50% 50%;
