@@ -1,0 +1,24 @@
+.iniciarSesion{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 400px;
+    & h1{
+        background-color:rgb(159, 252, 255);
+        color: grey;
+        text-align: center;
+        font-weight: bold;
+    }
+    & h3{
+        text-align: center;
+        background-color: grey;
+        color:rgb(159, 252, 255);
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    & p{
+        text-align: justify;
+        margin-top: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

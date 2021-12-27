@@ -1,0 +1,46 @@
+body{
+    font-family:'Código M PLUS 1', sans-serif;
+}
+header{
+    background-image: linear-gradient(to bottom,rgb(24, 241, 248), rgb(159, 252, 255));
+}
+.btn-outline-success{
+    color: grey;
+    border-color: grey;
+}
+footer{
+    background-image: linear-gradient(to bottom, rgb(24, 241, 248), rgb(159, 252, 255));
+    display: grid;
+    grid-template-columns: 15% 85%;
+    column-gap: 10px;
+    & .logo{
+        width: 180px;
+        height: 180px;
+        & .imgLogo{
+            width: 150px;
+            margin-top: 12px;
+            margin-left: 12px;
+        } 
+    }
+    .footer{
+        display:grid;
+        flex-direction: row;
+        align-items: center;
+        & ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            & li:hover{
+                display: inline-block;
+                background-color: white;
+                & a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: grey;
+                } 
+            }
+        }
+    }
+}

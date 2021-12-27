@@ -1,0 +1,54 @@
+.preguntasFrecuentes{
+    margin-top: 10px;
+    & h1{
+        background-color:rgb(159, 252, 255);
+        color: grey;
+        text-align: center;
+        font-weight: bold;
+    }
+    & .infoPreguntas{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        row-gap: 2px;
+        margin-top: 10px;
+        & p{
+            text-align: center;
+            background-color: grey;
+            color:rgb(159, 252, 255);
+            font-weight: bold;
+        }
+        & ol{
+            text-align: justify;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            padding-left: 5px;
+        }
+        & .mediosDePago{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 2px;
+            & .efectivo{
+                width: 90px;
+                height: 90px;
+            }
+            & .mercadoPago{
+                width: 90px;
+                height: 90px;
+            }
+            & .debito{
+                width: 90px;
+                height: 90px;
+            }
+            & .creditoVisa{
+                width: 90px;
+                height: 90px;
+            }
+            & .credito{
+                width: 90px;
+                height: 85px;
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+/* INDEX */
+/* header-footer */
+@media only screen and (max-width: 768px){
+    footer {
+            display: grid;
+            grid-template-columns: 15% 85%;
+            column-gap: 1px;
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+        }
+        .imgLogo{
+            width: 90px;
+            padding: 0px 3px 0px 3px;
+            margin-top: 4px;
+            margin-bottom: 2px;
+        }
+        .header, .footer{
+            display:grid;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction:column;
+            justify-content: space-between;
+        }
+        .footer ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .header.footer, ul li:hover{
+            display: inline-block;
+            background-color: white;
+        }
+        .header.footer, ul li a{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            color: grey;
+            margin-left: 3px;
+        }
+        .sectionProductos h1{
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+        .productos ul{
+            flex-direction: column;
+            align-items: center;
+        }
+    
+    }
+    @media only screen and (max-width: 480px){
+        footer{
+            grid-template-columns: 30% 70%;
+            column-gap: 0px;
+        }
+        .carouselImg #demo{
+            width: 90%;
+            height: 250px;
+        }
+        .carousel-item img{
+            width: 90%;
+            height: 250px;
+        }
+        .imgDestacados{
+            display:grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+            "img1 img2"
+            "img3 img4";
+            row-gap: 3px;
+            justify-items: center;
+        }
+        .dest1{
+            grid-area: img1;
+        }
+        .dest2{
+            grid-area: img2;
+        }
+        .dest3{
+            grid-area: img3;
+        }
+        .dest4{
+            grid-area: img4;
+        }
+        .divNosotras{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .divNosotras p{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .prendas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
