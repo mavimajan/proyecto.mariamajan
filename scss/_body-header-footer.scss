@@ -44,3 +44,15 @@ footer{
         }
     }
 }
+$botones:(
+    gris: grey,
+    negro: black,
+    agua: #18f1f8 
+);
+@each $colores, $color in $botones{
+    .btn--#{$colores} {
+        border: $color solid 5px;
+        color: $color;
+    }
+}
+

@@ -29,26 +29,17 @@
             justify-content: space-around;
             flex-wrap: wrap;
             margin-bottom: 2px;
-            & .efectivo{
-                width: 90px;
-                height: 90px;
-            }
-            & .mercadoPago{
-                width: 90px;
-                height: 90px;
-            }
-            & .debito{
-                width: 90px;
-                height: 90px;
-            }
-            & .creditoVisa{
-                width: 90px;
-                height: 90px;
-            }
             & .credito{
                 width: 90px;
                 height: 85px;
             }
         }
     }
+}
+@mixin medios($width, $height) {
+    height: $height;
+    width: $width;
+}
+.pago {
+    @include medios(90px, 90px);
 }

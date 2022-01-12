@@ -9,7 +9,7 @@
     & .mediosContacto{
         display: grid;
         grid-template-columns: 1fr 8fr;
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: 1fr 1fr 1fr;
         row-gap: 3px;
         column-gap: 1px;
         margin-top: 10px;
