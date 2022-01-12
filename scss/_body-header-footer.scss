@@ -12,7 +12,6 @@ footer{
     background-image: linear-gradient(to bottom, rgb(24, 241, 248), rgb(159, 252, 255));
     display: grid;
     grid-template-columns: 15% 85%;
-    column-gap: 10px;
     & .logo{
         width: 180px;
         height: 180px;
@@ -24,7 +23,6 @@ footer{
     }
     .footer{
         display:grid;
-        flex-direction: row;
         align-items: center;
         & ul{
             list-style: none;
