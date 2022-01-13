@@ -3,10 +3,11 @@ body{
 }
 header{
     background-image: linear-gradient(to bottom,rgb(24, 241, 248), rgb(159, 252, 255));
-}
-.btn-outline-success{
-    color: grey;
-    border-color: grey;
+    & .collapse{
+        & a{
+            color: black;
+        }
+    }
 }
 footer{
     background-image: linear-gradient(to bottom, rgb(24, 241, 248), rgb(159, 252, 255));
@@ -29,13 +30,11 @@ footer{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            & li:hover{
+            & li{
                 display: inline-block;
-                background-color: white;
                 & a{
                     text-decoration: none;
                     font-weight: bold;
-                    font-size: 20px;
                     color: grey;
                 } 
             }
@@ -49,8 +48,9 @@ $botones:(
 );
 @each $colores, $color in $botones{
     .btn--#{$colores} {
-        border: $color solid 5px;
+        border: $color solid 1px;
         color: $color;
     }
 }
+
 
