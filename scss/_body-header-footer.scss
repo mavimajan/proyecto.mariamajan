@@ -43,13 +43,14 @@ footer{
 }
 $botones:(
     gris: grey,
-    negro: black,
+    negro:black,
     agua: #18f1f8 
 );
 @each $colores, $color in $botones{
     .btn--#{$colores} {
         border: $color solid 1px;
-        color: $color;
+        color: white;
+        background-color: darkgrey ;
     }
 }
 

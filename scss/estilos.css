@@ -66,17 +66,20 @@ footer .footer ul li a {
 
 .btn--gris {
   border: grey solid 1px;
-  color: grey;
+  color: white;
+  background-color: darkgrey;
 }
 
 .btn--negro {
   border: black solid 1px;
-  color: black;
+  color: white;
+  background-color: darkgrey;
 }
 
 .btn--agua {
   border: #18f1f8 solid 1px;
-  color: #18f1f8;
+  color: white;
+  background-color: darkgrey;
 }
 
 main {
