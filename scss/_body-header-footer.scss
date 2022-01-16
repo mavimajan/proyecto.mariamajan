@@ -3,26 +3,35 @@ body{
 }
 header{
     background-image: linear-gradient(to bottom,rgb(24, 241, 248), rgb(159, 252, 255));
+    & .nav-link{
+        color: grey !important;
+        font-weight: bold;
+    }
+    & .nav-link:hover{
+        background-color: #E4F2F0;
+    }
     & .collapse{
         & a{
-            color: black;
+            color: grey;
+            font-weight: bold;
         }
     }
 }
+
 footer{
     background-image: linear-gradient(to bottom, rgb(24, 241, 248), rgb(159, 252, 255));
     display: grid;
     grid-template-columns: 15% 85%;
     & .logo{
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
         & .imgLogo{
-            width: 150px;
+            width: 180px;
             margin-top: 12px;
             margin-left: 12px;
         } 
     }
-    .footer{
+    & .footer{
         display:grid;
         align-items: center;
         & ul{
@@ -30,6 +39,9 @@ footer{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            & li:hover{
+                background-color: white;
+            }
             & li{
                 display: inline-block;
                 & a{
@@ -41,6 +53,7 @@ footer{
         }
     }
 }
+
 $botones:(
     gris: grey,
     negro:black,
@@ -53,5 +66,3 @@ $botones:(
         background-color: darkgrey ;
     }
 }
-
-

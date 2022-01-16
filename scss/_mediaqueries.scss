@@ -16,12 +16,25 @@
             }
         }
     }
-    .sectionProductos h1{
-        margin-top: 5px;
+    main{
+        & .sectionProductos{
+            & h1{
+                margin-top: 5px;
+            }
+            & .productos{
+                & ul{
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
     }
-    .productos ul{
-        flex-direction: column;
-        align-items: center;
+    .nosotras{
+        & .divNosotras{
+            & img{
+                padding-top: 70px;
+            }
+        }
     }
 }
 
@@ -30,44 +43,53 @@
         grid-template-columns: 30% 70%;
         column-gap: 0px;
     }
-    main .carouselImg #demo{
-        width: 90%;
-        height: 250px;
+    main{
+        & .carouselImg #demo{
+            width: 90%;
+            height: 250px;
+            & .carousel-item img{
+                width: 90%;
+                height: 250px;
+            }
+        }
+        & .destacados{
+            & .imgDestacados{
+                display:grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                "img1 img2"
+                "img3 img4";
+                row-gap: 3px;
+                justify-items: center;
+                & .dest1{
+                    grid-area: img1;
+                }
+                & .dest2{
+                    grid-area: img2;
+                }
+                & .dest3{
+                    grid-area: img3;
+                }
+                & .dest4{
+                    grid-area: img4;
+                }
+            }
+        }
     }
-    main .carouselImg #demo .carousel-item img{
-        width: 90%;
-        height: 250px;
-    }
-    .imgDestacados{
-        display:grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-        "img1 img2"
-        "img3 img4";
-        row-gap: 3px;
-        justify-items: center;
-    }
-    .dest1{
-        grid-area: img1;
-    }
-    .dest2{
-        grid-area: img2;
-    }
-    .dest3{
-        grid-area: img3;
-    }
-    .dest4{
-        grid-area: img4;
-    }
-    .divNosotras{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .divNosotras p{
-        padding-left: 10px;
-        padding-right: 10px;
+    .nosotras{
+        & .divNosotras{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & img{
+                padding-top: 5px;
+            }
+            & p{
+                padding-left: 7px;
+                padding-right: 2px;
+            }
+        }
     }
     .prendas{
         display: flex;
@@ -78,5 +100,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .seleccionUno, .seleccionDos, .seleccionTres, .seleccionCuatro{
+        & .talle{
+            padding-right: 10px;
+        }
+        & .color{
+            padding-left: 5px;
+        }
     }
 }

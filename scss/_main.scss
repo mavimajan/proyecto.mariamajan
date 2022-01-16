@@ -22,54 +22,55 @@ main{
             }
         }
     }
-}
-
-
-
-
-
-.sectionProductos h1{
-    background-color:rgb(159, 252, 255);
-    color: grey;
-    font-weight: bold;
-    text-align: center;
-}
-.productos ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.productos ul li{
-    display: inline-block;
-}
-.productos ul li a{
-    color: grey;
-    text-decoration: none;
-    text-align: center;
-}
-.productos ul li a img{
-    width: 250px;
-    height: 400px;
-    margin-left: 1px;
-    margin-right: 1px;
-}
-.destacados h2{
-    background-color:rgb(159, 252, 255);
-    color: grey;
-    font-weight: bold;
-    text-align: center;
-}
-.imgDestacados{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 10px;
-}
-.imgDestacados img{
-    width: 150px;
-    height: 200px;
-}
-.imgDestacados img:hover{
-    transform: scale(1.2);
+    & .sectionProductos{
+        h1{
+            background-color:rgb(159, 252, 255);
+            color: grey;
+            font-weight: bold;
+            text-align: center;
+        }
+        & .productos{
+            & ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                & li{
+                    display: inline-block;
+                    & a{
+                        color: grey;
+                        text-decoration: none;
+                        text-align: center;
+                        & img{
+                            width: 250px;
+                            height: 400px;
+                            margin-left: 1px;
+                            margin-right: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .destacados{
+        & h2{
+            background-color:rgb(159, 252, 255);
+            color: grey;
+            font-weight: bold;
+            text-align: center;
+        }
+        & .imgDestacados{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            & img{
+                width: 150px;
+                height: 200px;
+            }
+            & img:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
 }

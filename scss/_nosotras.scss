@@ -9,27 +9,24 @@
         display: grid;
         grid-template-areas: 
         "img texto1"
-        "img texto2"
-        "img texto3";
+        "img texto2";
         grid-template-columns: 1fr 7fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         column-gap: 5px;
         margin-top: 10px;
         margin-bottom: 10px;
         & img{
             grid-area: img;
             width: 300px;
+            height: 250px;
             padding-left: 10px;
         }
         & .texto1{
             grid-area: texto1;
-            margin-top: 10px;
+            margin-top: 30px;
         }
         & .texto2{
             grid-area: texto2;
-        }
-        & .texto3{
-            grid-area: texto3;
         }
     }
 }
