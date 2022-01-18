@@ -33,12 +33,12 @@ footer {
 }
 
 footer .logo {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
 }
 
 footer .logo .imgLogo {
-  width: 180px;
+  width: 90px;
   margin-top: 12px;
   margin-left: 12px;
 }
@@ -234,7 +234,41 @@ main .destacados .imgDestacados img:hover {
   font-weight: bold;
 }
 
-.preguntasFrecuentes .infoPreguntas ol {
+.preguntasFrecuentes .infoPreguntas .card .card-body1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preguntasFrecuentes .infoPreguntas .card .card-body1 ol {
+  text-align: justify;
+  margin-top: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  list-style-type: decimal;
+}
+
+.preguntasFrecuentes .infoPreguntas .card .card-body3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preguntasFrecuentes .infoPreguntas .card .card-body3 ul {
   text-align: justify;
   margin-top: 2px;
   padding-left: 5px;
@@ -256,11 +290,6 @@ main .destacados .imgDestacados img:hover {
   margin-bottom: 2px;
 }
 
-.preguntasFrecuentes .infoPreguntas .mediosDePago .credito {
-  width: 90px;
-  height: 85px;
-}
-
 .pago {
   height: 90px;
   width: 90px;
@@ -278,57 +307,21 @@ main .destacados .imgDestacados img:hover {
 }
 
 .contacto .mediosContacto {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 8fr;
-      grid-template-columns: 1fr 8fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 3px;
-  -webkit-column-gap: 1px;
-          column-gap: 1px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  justify-items: stretch;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.contacto .mediosContacto .imgChat {
+.contacto .mediosContacto a img {
   width: 65px;
   height: 70px;
-}
-
-.contacto .mediosContacto .imgMail {
-  width: 55px;
-  height: 65px;
-}
-
-.contacto .mediosContacto .imgIg {
-  width: 55px;
-  height: 65px;
-}
-
-.contacto .mediosContacto .numero {
-  display: inline-block;
-  text-align: start;
-  font-weight: bold;
-}
-
-.contacto .mediosContacto .mail {
-  display: inline-block;
-  text-align: start;
-  font-weight: bold;
-}
-
-.contacto .mediosContacto .instagram {
-  display: inline-block;
-  text-align: start;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
 }
 
 .contacto .formulario {
@@ -347,6 +340,8 @@ main .destacados .imgDestacados img:hover {
 .contacto .formulario .formularioContacto {
   margin-top: 5px;
   margin-bottom: 5px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .contacto .puntoDeVenta {
@@ -359,6 +354,10 @@ main .destacados .imgDestacados img:hover {
   background-color: grey;
   color: #9ffcff;
   font-weight: bold;
+}
+
+.contacto .puntoDeVenta iframe {
+  width: 100%;
 }
 
 .nosotras h1 {
@@ -388,7 +387,6 @@ main .destacados .imgDestacados img:hover {
   -ms-grid-column: 1;
   grid-area: img;
   width: 300px;
-  height: 250px;
   padding-left: 10px;
 }
 
@@ -603,6 +601,7 @@ main .destacados .imgDestacados img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px;
 }
 
 .tabla h3 {
@@ -761,7 +760,7 @@ main .destacados .imgDestacados img:hover {
             align-items: center;
   }
   .seleccionUno .talle, .seleccionDos .talle, .seleccionTres .talle, .seleccionCuatro .talle {
-    padding-right: 5px;
+    padding-right: 10px;
   }
   .seleccionUno .color, .seleccionDos .color, .seleccionTres .color, .seleccionCuatro .color {
     padding-left: 5px;

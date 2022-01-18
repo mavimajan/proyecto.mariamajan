@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light;">
-            <a class="navbar-brand" href="index.html"><img src="multimedia/intima logo.png" alt="logo" style="height: 180px;"></a>            
+            <a class="navbar-brand" href="index.html"><img src="multimedia/intima logo.png" alt="logo" style="height: 90px;"></a>            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,7 +23,7 @@
                         <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        <a class="nav-link" href="iniciarsesion.html">INICIAR SESION</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">INFORMACION</a>
@@ -31,7 +31,7 @@
                             <a class="dropdown-item" href="preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
                             <a class="dropdown-item" href="nosotras.html">NOSOTRAS</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="iniciarsesion.html">INICIAR SESION</a>
+                            <a class="dropdown-item" href="contacto.html">CONTACTO</a>
                         </div>
                     </li>
                 </ul>
@@ -46,33 +46,62 @@
         <section class="preguntasFrecuentes">
             <h1>PREGUNTAS FRECUENTES</h1>
             <div class="infoPreguntas">
-                <p><strong>COMO COMPRAR</strong></p>
-                <ol>
-                    <li>Crea tu sesion en <strong>iniciar sesion</strong></li>
-                    <li>Iniciá sesion</li>
-                    <li>Seleccioná los productos eligiendo talle y color</li>
-                    <li>Dirigite al <strong>carrito de compras</strong></li>
-                    <li>Seleccioná <strong>retiro en sucursal</strong> o <strong>envio a domicilio</strong>
-                    </li>
-                    <li>Si seleccionaste envio a domicilio, podrás ver el costo del envío al colocar tu código postal</li>
-                    <li>Elegí el medio de pago <strong>¡Listo!</strong></li>
-                </ol>
-                <p><strong>MEDIOS DE PAGO</strong></p>
-                <div class="mediosDePago">
-                    <img class="pago" src="multimedia/efectivo.jpg" alt="efectivo">
-                    <img class="pago" src="multimedia/mercadopago.png" alt="mercado pago">
-                    <img class="pago" src="multimedia/visa.png" alt="debito visa">
-                    <img class="pago" src="multimedia/visa.png" alt="credito visa">
-                    <img class="credito" src="multimedia/mastercard.jpg" alt="credito mastercard">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            <p><strong>COMO COMPRAR</strong></p>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-parent="#accordion">
+                            <div class="card-body1">
+                            <ol>
+                                <li>Creá tu sesión en <strong>Iniciar Sesión</strong></li>
+                                <li>Iniciá sesión</li>
+                                <li>Selecioná los productos eligiendo talle y color</li>
+                                <li>Dirigite al <strong>carrito de compras</strong></li>
+                                <li>Seleccioná <strong>retiro en sucursal</strong> o <strong>envio a domicilio</strong></li>                            </li>
+                                <li>Si seleccionaste envio a domicilio, podrás ver el costo del envío al colocar tu código postal</li>
+                                <li>Elegí el medio de pago <strong>¡Listo!</strong></li>
+                            </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                            <p><strong>MEDIOS DE PAGO</strong></p>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body2">
+                                <div class="mediosDePago">
+                                    <img class="pago" src="multimedia/efectivo.png" alt="efectivo">
+                                    <img class="pago" src="multimedia/pago.png" alt="mercado pago">
+                                    <img class="pago" src="multimedia/tarjeta.png" alt="debito y credito">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                            <p><strong>POLITICA DE CAMBIOS</strong></p>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="card-body3">
+                                <ul type="disc">
+                                    <li>Los cambios se realizan sólo por talle</li>
+                                    <li>Para realizar el mismo, deberás comunicarte con nosotras a través de nuestros alguno de nuestros medios</li>
+                                    <li>Deberás acercarte a nuestra sucursal para realizar el cambio</li>
+                                    <li>Recordá que el producto que desees cambiar debe estar en excelentes condiciones. Caso contrario no se realizará el cambio.</li>
+                                    <li>Cualquier duda que tengas, comunicate con nosotras para que podamos ayudarte</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p><strong>POLÍTICA DE CAMBIOS</strong></p>
-                <ol>
-                    <li>Los cambios se realizan sólo por talle</li>
-                    <li>Para realizar el mismo, deberás comunicarte con nosotras a través de nuestros alguno de nuestros medios</li>
-                    <li>Podras acercarte a cualquiera de nuestras sucursales para realizar el cambio</li>
-                    <li>Recordá que el producto que desees cambiar debe estar en excelentes condiciones. Caso contrario no se realizará el cambio.</li>
-                    <li>Cualquier duda que tengas, comunicate con nosotras para que podamos ayudarte</li>
-                </ol>
             </div>
         </section>
     </main>

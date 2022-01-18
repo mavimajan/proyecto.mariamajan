@@ -7,44 +7,14 @@
         color: grey;
     }
     & .mediosContacto{
-        display: grid;
-        grid-template-columns: 1fr 8fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 3px;
-        column-gap: 1px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-left: 10px;
-        justify-items: stretch;
-        align-items: center;
-        & .imgChat{
-            width: 65px;
-            height: 70px;
-        }
-        & .imgMail{
-            width: 55px;
-            height: 65px;
-        }
-        & .imgIg{
-            width: 55px;
-            height: 65px;
-        }
-        & .numero{
-            display: inline-block;
-            text-align: start;
-            font-weight: bold;
-        }
-        & .mail{
-            display: inline-block;
-            text-align: start;
-            font-weight: bold;
-        }
-        & .instagram{
-            display: inline-block;
-            text-align: start;
-            font-weight: bold;
-            color: black;
-            text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        & a{
+            & img{
+                width: 65px;
+                height: 70px;
+            }
         }
     }
     & .formulario{
@@ -60,6 +30,8 @@
         & .formularioContacto{
             margin-top: 5px;
             margin-bottom: 5px;
+            max-width: 500px;
+            margin: 0 auto;
         }
     }
     & .puntoDeVenta{
@@ -70,6 +42,9 @@
             background-color: grey;
             color:rgb(159, 252, 255);
             font-weight: bold;
+        }
+        & iframe{
+            width: 100%;
         }
     }
 }
