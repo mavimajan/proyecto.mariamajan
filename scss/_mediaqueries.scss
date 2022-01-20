@@ -52,6 +52,13 @@
                 height: 250px;
             }
         }
+        & .informacion{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            align-items: center;
+            justify-items: center;
+        }
         & .destacados{
             & .imgDestacados{
                 display:grid;

@@ -52,6 +52,59 @@ main{
             }
         }
     }
+    & .informacion{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 10px;
+        align-items: center;
+        justify-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        & div{
+            border: 2px solid grey;
+            width: 70%;
+            height: 100%;
+            & h6{
+                text-align: center;
+                color: grey;
+                font-weight: bold;
+            }
+            & p{
+                text-align: center;
+                color: grey;
+            }
+        }
+    }
+    //     & .enviosInterior{
+    //         background-color: rgb(202, 200, 200);
+    //         & h5{
+    //             text-align: center;
+    //         }
+    //         & p{
+    //             text-align: center;
+    //         }
+    //         & img{
+    //             width: 50px;
+    //             height: 50px;
+    //         }
+    //     }
+    //     & .comprasMayor{
+    //         background-color:rgb(202, 200, 200) ;
+    //         & h5{
+    //             text-align: center;
+    //         }
+    //         & p{
+    //             text-align: center;
+    //         }
+    //         & Img{
+    //             width: 50px;
+    //             height: 50px;
+    //         }
+    //     }
+    // }
     & .destacados{
         & h2{
             background-color:rgb(159, 252, 255);
