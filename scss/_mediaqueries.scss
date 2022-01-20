@@ -29,10 +29,10 @@
             }
         }
     }
-    .nosotras{
-        & .divNosotras{
-            & img{
-                padding-top: 70px;
+    .preguntasFrecuentes{
+        & .infoPreguntas{
+            & .cambios{
+                padding-left: 15px;
             }
         }
     }
@@ -107,6 +107,13 @@
         }
         & .color{
             padding-left: 5px;
+        }
+    }
+    .preguntasFrecuentes{
+        & .infoPreguntas{
+            & .comprar{
+                padding-left: 15px;
+            }
         }
     }
 }

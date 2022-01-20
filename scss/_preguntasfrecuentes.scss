@@ -1,5 +1,6 @@
 .preguntasFrecuentes{
     margin-top: 10px;
+    border: 2px solid blue;
     & h1{
         background-color:rgb(159, 252, 255);
         color: grey;
@@ -7,39 +8,23 @@
         font-weight: bold;
     }
     & .infoPreguntas{
-        display: grid;
-        grid-template-rows: auto auto auto;
-        row-gap: 2px;
-        margin-top: 10px;
         & p{
             text-align: center;
             background-color: grey;
             color:rgb(159, 252, 255);
             font-weight: bold;
         }
-        & .card{
-            & .card-body1{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                & ol{
-                    text-align: justify;
-                    margin-top: 2px;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    list-style-type: decimal;
-                }
-            }
-            & .card-body3{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                & ul{
-                    text-align: justify;
-                    margin-top: 2px;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                }
+        & .comprar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            & ol{
+                text-align: justify;
+                margin-top: 2px;
+                padding-left: 5px;
+                padding-right: 5px;
+                list-style-type: decimal;
             }
         }
         & .mediosDePago{
@@ -49,12 +34,63 @@
             flex-wrap: wrap;
             margin-bottom: 2px;
         }
+        & .cambios{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            & ul{
+                text-align: justify;
+                margin-top: 2px;
+                padding-left: 5px;
+                padding-right: 5px;
+                list-style-type: disc;
+            }
+        }
     }
 }
+
+
+    // & .infoPreguntas{
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     // display: grid;
+    //     // grid-template-rows: auto auto auto;
+    //     // row-gap: 2px;
+    //     // margin-top: 10px;
+    //     & p{
+    //         text-align: center;
+    //         background-color: grey;
+    //         color:rgb(159, 252, 255);
+    //         font-weight: bold;
+    //     }
+    //     & ol{
+    //         text-align: justify;
+    //         margin-top: 2px;
+    //         padding-left: 5px;
+    //         padding-right: 5px;
+    //         list-style-type: decimal;
+    //     }
+    //     & ul{
+    //         text-align: justify;
+    //         margin-top: 2px;
+    //         padding-left: 5px;
+    //         padding-right: 5px;
+    //     }
+    //     & .mediosDePago{
+    //         display: flex;
+    //         flex-direction: row;
+    //         justify-content: space-around;
+    //         flex-wrap: wrap;
+    //         margin-bottom: 2px;
+    //     }
+    // }
+
 @mixin medios($width, $height) {
     height: $height;
     width: $width;
 }
 .pago {
-    @include medios(90px, 90px);
+    @include medios(65px, 70px);
 }

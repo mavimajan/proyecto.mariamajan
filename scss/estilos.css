@@ -209,6 +209,7 @@ main .destacados .imgDestacados img:hover {
 
 .preguntasFrecuentes {
   margin-top: 10px;
+  border: 2px solid blue;
 }
 
 .preguntasFrecuentes h1 {
@@ -218,15 +219,6 @@ main .destacados .imgDestacados img:hover {
   font-weight: bold;
 }
 
-.preguntasFrecuentes .infoPreguntas {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
-  row-gap: 2px;
-  margin-top: 10px;
-}
-
 .preguntasFrecuentes .infoPreguntas p {
   text-align: center;
   background-color: grey;
@@ -234,7 +226,7 @@ main .destacados .imgDestacados img:hover {
   font-weight: bold;
 }
 
-.preguntasFrecuentes .infoPreguntas .card .card-body1 {
+.preguntasFrecuentes .infoPreguntas .comprar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,34 +237,16 @@ main .destacados .imgDestacados img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.preguntasFrecuentes .infoPreguntas .card .card-body1 ol {
+.preguntasFrecuentes .infoPreguntas .comprar ol {
   text-align: justify;
   margin-top: 2px;
   padding-left: 5px;
   padding-right: 5px;
   list-style-type: decimal;
-}
-
-.preguntasFrecuentes .infoPreguntas .card .card-body3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.preguntasFrecuentes .infoPreguntas .card .card-body3 ul {
-  text-align: justify;
-  margin-top: 2px;
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 .preguntasFrecuentes .infoPreguntas .mediosDePago {
@@ -290,9 +264,32 @@ main .destacados .imgDestacados img:hover {
   margin-bottom: 2px;
 }
 
+.preguntasFrecuentes .infoPreguntas .cambios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.preguntasFrecuentes .infoPreguntas .cambios ul {
+  text-align: justify;
+  margin-top: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  list-style-type: disc;
+}
+
 .pago {
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 65px;
 }
 
 .contacto {
@@ -317,6 +314,7 @@ main .destacados .imgDestacados img:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding: 5px;
 }
 
 .contacto .mediosContacto a img {
@@ -388,6 +386,9 @@ main .destacados .imgDestacados img:hover {
   grid-area: img;
   width: 300px;
   padding-left: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .nosotras .divNosotras .texto1 {
@@ -665,8 +666,8 @@ main .destacados .imgDestacados img:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .nosotras .divNosotras img {
-    padding-top: 70px;
+  .preguntasFrecuentes .infoPreguntas .cambios {
+    padding-left: 15px;
   }
 }
 
@@ -764,6 +765,9 @@ main .destacados .imgDestacados img:hover {
   }
   .seleccionUno .color, .seleccionDos .color, .seleccionTres .color, .seleccionCuatro .color {
     padding-left: 5px;
+  }
+  .preguntasFrecuentes .infoPreguntas .comprar {
+    padding-left: 15px;
   }
 }
 
